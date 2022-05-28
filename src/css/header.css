@@ -24,11 +24,11 @@ body {
 .navbar-brand {
   display: flex;
   flex: auto;
-  padding-left: 1rem;
+  border-bottom: 1px solid var(--navbar-border-bottom-color);
 }
 
 .navbar-brand .navbar-item {
-  color: var(--navbar-font-color);
+  color: var(--color-white);
 }
 
 .navbar-brand .navbar-item:first-child {
@@ -51,6 +51,12 @@ body {
 .navbar-brand .navbar-item.search {
   flex: auto;
   justify-content: flex-end;
+}
+
+.navbar-brand > a.navbar-item {
+  font-weight: 500;
+  font-size: 16px !important;
+  margin-left: 16px;
 }
 
 #search-input {
@@ -98,7 +104,8 @@ body {
 }
 
 .navbar-burger:not(.is-active) span {
-  transition: transform ease-out 0.25s, opacity 0s 0.25s, margin-top ease-out 0.25s 0.25s;
+  transition: transform ease-out 0.25s, opacity 0s 0.25s,
+    margin-top ease-out 0.25s 0.25s;
 }
 
 .navbar-burger span + span {

@@ -253,7 +253,7 @@
   --body-font-size--desktop: 0.875rem;
   --body-font-size--print: 0.875rem;
   --body-line-height: 1.25rem;
-  --body-font-color: var(--color-jet-70);
+  --body-font-color: var(--color-gray-100);
   --body-font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   --body-font-weight-bold: 600;
   --monospace-font-family: "IBM Plex Mono", "Menlo", "DejaVu Sans Mono",
@@ -261,22 +261,24 @@
   --monospace-font-weight-bold: 600;
   /* base */
   --body-background: var(--color-white);
-  --panel-background: var(--color-smoke-30);
-  --panel-border-color: var(--color-smoke-90);
-  --scrollbar-track-color: var(--color-smoke-30);
+  --panel-background: var(--color-white);
+  --panel-border-color: var(--color-gray-100);
+  --scrollbar-track-color: var(--color-gray-10);
   --scrollbar-thumb-color: var(--color-gray-10);
-  --scrollbar_hover-thumb-color: var(--color-gray-30);
+  --scrollbar_hover-thumb-color: var(--color-gray-100-hover);
   /* navbar */
-  --navbar-background: var(--color-jet-80);
-  --navbar-font-color: var(--color-white);
-  --navbar_hover-background: var(--color-black);
-  --navbar-button-background: var(--color-white);
-  --navbar-button-border-color: var(--panel-border-color);
-  --navbar-button-font-color: var(--body-font-color);
-  --navbar-menu-border-color: var(--panel-border-color);
-  --navbar-menu-background: var(--color-white);
-  --navbar-menu-font-color: var(--body-font-color);
-  --navbar-menu_hover-background: var(--color-smoke-50);
+  --navbar-background: var(--color-gray-100);
+  --navbar-font-color: var(--color-gray-30);
+  --navbar_hover-background: var(--color-gray-90);
+  --navbar-border-bottom-color: var(--color-gray-80); /* new */
+  /* e.g.: cookie preferences button */
+  --navbar-button-background: var(--navbar-background);
+  --navbar-button-border-color: #8897a2;
+  --navbar-button-font-color: #8897a2;
+  --navbar-menu-border-color: var(--color-gray-80);
+  --navbar-menu-background: var(--navbar-background);
+  --navbar-menu-font-color: var(--navbar-font-color);
+  --navbar-menu_hover-background: var(--navbar_hover-background);
   /* nav */
   --nav-background: var(--panel-background);
   --nav-border-color: var(--color-gray-10);
@@ -356,7 +358,7 @@
   --footer-font-color: var(--color-gray-70);
   --footer-link-font-color: var(--color-jet-80);
   /* dimensions and positioning */
-  --navbar-height: calc(63 / var(--rem-base) * 1rem);
+  --navbar-height: 48px; /* 48px or 3rem, 48px works right */
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
   --drawer-height: var(--toolbar-height);
   --body-top: var(--navbar-height);
