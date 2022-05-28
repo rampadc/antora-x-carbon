@@ -15,8 +15,6 @@
   ],
   "devDependencies": {
     "@asciidoctor/core": "~2.2",
-    "@fontsource/roboto": "~4.5",
-    "@fontsource/roboto-mono": "~4.5",
     "autoprefixer": "~9.7",
     "browser-pack-flat": "~3.4",
     "browserify": "~16.5",
@@ -53,5 +51,8 @@
     "stylelint-config-standard": "~20.0",
     "vinyl-buffer": "~1.0",
     "vinyl-fs": "~3.0"
+  },
+  "dependencies": {
+    "@ibm/plex": "^6.0.2"
   }
 }

@@ -17,17 +17,26 @@
   --color-jet-70: #222;
   --color-jet-80: #191919;
   --color-black: #000;
-  /* fonts */
-  --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
-  --body-font-size: 1.0625em; /* 17px */
-  --body-font-size--desktop: 1.125em; /* 18px */
-  --body-font-size--print: 0.9375em; /* 15px */
-  --body-line-height: 1.15;
+  /* fonts - IBM Design Language body-01 */
+  /* https: //www.ibm.com/design/language/typography/type-specs-ui */
+  --rem-base: 16; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
+  --body-font-size: 0.875rem;
+  --body-font-size--desktop: 0.875rem; 
+  --body-font-size--print: 0.875rem;
+  --body-line-height: 1.25rem;
   --body-font-color: var(--color-jet-70);
-  --body-font-family: "Roboto", sans-serif;
-  --body-font-weight-bold: 500;
-  --monospace-font-family: "Roboto Mono", monospace;
-  --monospace-font-weight-bold: 500;
+  --body-font-family: 'IBM Plex Sans',
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  --body-font-weight-bold: 600;
+  --monospace-font-family: 'IBM Plex Mono',
+    'Menlo',
+    'DejaVu Sans Mono',
+    'Bitstream Vera Sans Mono',
+    Courier,
+    monospace;
+  --monospace-font-weight-bold: 600;
   /* base */
   --body-background: var(--color-white);
   --panel-background: var(--color-smoke-30);
