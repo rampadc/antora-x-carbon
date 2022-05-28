@@ -280,13 +280,13 @@
   --navbar-menu-font-color: var(--navbar-font-color);
   --navbar-menu_hover-background: var(--navbar_hover-background);
   /* nav */
-  --nav-background: var(--panel-background);
+  --nav-background: var(--color-gray-90);
   --nav-border-color: var(--color-gray-10);
-  --nav-line-height: 1.35;
-  --nav-heading-font-color: var(--color-jet-30);
-  --nav-muted-color: var(--color-gray-70);
+  --nav-line-height: 1.25;
+  --nav-heading-font-color: var(--color-gray-70);
+  --nav-muted-color: var(--color-gray-30);
   --nav-panel-divider-color: var(--color-smoke-90);
-  --nav-secondary-background: var(--color-smoke-70);
+  --nav-secondary-background: var(--color-white);
   /* toolbar */
   --toolbar-background: var(--panel-background);
   --toolbar-border-color: var(--panel-border-color);

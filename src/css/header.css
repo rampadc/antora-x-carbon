@@ -9,7 +9,7 @@ body {
 .navbar {
   background: var(--navbar-background);
   color: var(--navbar-font-color);
-  font-size: calc(16 / var(--rem-base) * 1rem);
+  font-size: 16px;
   height: var(--navbar-height);
   position: fixed;
   top: 0;
@@ -34,7 +34,7 @@ body {
 .navbar-brand .navbar-item:first-child {
   align-self: center;
   padding: 0;
-  font-size: calc(22 / var(--rem-base) * 1rem);
+  font-size: 16px;
   flex-wrap: wrap;
   line-height: 1;
 }
@@ -278,7 +278,6 @@ body {
     box-shadow: 0 4px 8px 0 #00000080;
     min-width: 100%;
     position: absolute;
-    transition: all 0.11s cubic-bezier(0.2, 0, 1, 0.9);
   }
 
   .navbar-dropdown .navbar-item {
