@@ -133,7 +133,7 @@ body {
   color: var(--navbar-menu-font-color);
   display: block;
   line-height: var(--doc-line-height);
-  padding: 0.5rem 1rem;
+  padding: 1.14rem 1.14rem;
 }
 
 .navbar-item.has-dropdown {
@@ -151,10 +151,6 @@ body {
   fill: currentColor;
   width: inherit;
   height: inherit;
-}
-
-.navbar-link {
-  padding-right: 2.5em;
 }
 
 .navbar-dropdown .navbar-item {
@@ -251,18 +247,10 @@ body {
   }
 
   .navbar-link::after {
-    border-width: 0 0 1px 1px;
-    border-style: solid;
-    content: "";
-    display: block;
-    height: 0.5em;
-    pointer-events: none;
-    position: absolute;
-    transform: rotate(-45deg);
-    width: 0.5em;
-    margin-top: -0.375em;
-    right: 1.125em;
-    top: 50%;
+    content: url(../img/menu-arrow.svg);
+    color: var(--navbar-font-color);
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
   }
 
   .navbar-end > .navbar-item,
@@ -284,17 +272,17 @@ body {
   .navbar-dropdown {
     background: var(--navbar-menu-background);
     border: 1px solid var(--navbar-menu-border-color);
-    border-top: none;
-    border-radius: 0 0 0.25rem 0.25rem;
     display: none;
     top: 100%;
     left: 0;
+    box-shadow: 0 4px 8px 0 #00000080;
     min-width: 100%;
     position: absolute;
+    transition: all 0.11s cubic-bezier(0.2, 0, 1, 0.9);
   }
 
   .navbar-dropdown .navbar-item {
-    padding: 0.5rem 3rem 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     white-space: nowrap;
   }
 

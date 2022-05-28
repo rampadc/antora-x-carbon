@@ -269,7 +269,7 @@
   /* navbar */
   --navbar-background: var(--color-gray-100);
   --navbar-font-color: var(--color-gray-30);
-  --navbar_hover-background: var(--color-gray-90);
+  --navbar_hover-background: #353535;
   --navbar-border-bottom-color: var(--color-gray-80); /* new */
   /* e.g.: cookie preferences button */
   --navbar-button-background: var(--navbar-background);
