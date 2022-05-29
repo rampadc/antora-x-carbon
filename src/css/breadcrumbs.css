@@ -1,7 +1,7 @@
 .breadcrumbs {
   display: none;
   flex: 1 1;
-  padding: 2rem;
+  padding: 32px;
   line-height: var(--nav-line-height);
 }
 

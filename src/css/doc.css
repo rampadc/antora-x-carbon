@@ -3,16 +3,15 @@
   font-size: var(--doc-font-size);
   hyphens: auto;
   line-height: var(--doc-line-height);
-  margin: var(--doc-margin);
+  margin: 0;
   max-width: var(--doc-max-width);
-  padding: 0 1rem 4rem;
+  padding: 0 32px 32px;
 }
 
 @media screen and (min-width: 1024px) {
   .doc {
     flex: auto;
-    font-size: var(--doc-font-size--desktop);
-    margin: var(--doc-margin--desktop);
+    font-size: 14px;
     max-width: var(--doc-max-width--desktop);
     min-width: 0;
   }
@@ -24,8 +23,8 @@
 .doc h4,
 .doc h5,
 .doc h6 {
-  color: var(--heading-font-color);
-  font-weight: var(--heading-font-weight);
+  color: var(--color-gray-100);
+  font-weight: 600;
   hyphens: none;
   line-height: 1.3;
   margin: 1rem 0 0;
@@ -328,12 +327,12 @@
 }
 
 .doc .admonitionblock {
-  margin: 1.4rem 0 0;
+  margin: 32px 0 0;
 }
 
 .doc .admonitionblock p,
 .doc .admonitionblock td.content {
-  font-size: calc(16 / var(--rem-base) * 1rem);
+  font-size: 14px;
 }
 
 .doc .admonitionblock td.content > :not(.title):first-child,
@@ -342,7 +341,7 @@
 }
 
 .doc .admonitionblock pre {
-  font-size: calc(15 / var(--rem-base) * 1rem);
+  font-size: 14px;
 }
 
 .doc .admonitionblock > table {
@@ -356,6 +355,21 @@
   background: var(--admonition-background);
   width: 100%;
   word-wrap: anywhere;
+}
+.admonitionblock.tip td.content {
+  background: var(--color-green-10);
+}
+.admonitionblock.note td.content {
+  background: var(--color-blue-10);
+}
+.admonitionblock.warning td.content {
+  background: var(--color-yellow-10);
+}
+.admonitionblock.caution td.content {
+  background: var(--color-yellow-10);
+}
+.admonitionblock.important td.content {
+  background: var(--color-red-10);
 }
 
 .doc .admonitionblock .icon {
@@ -927,7 +941,8 @@
   background: var(--kbd-background);
   border: 1px solid var(--kbd-border-color);
   border-radius: 0.25em;
-  box-shadow: 0 1px 0 var(--kbd-border-color), 0 0 0 0.1em var(--body-background) inset;
+  box-shadow: 0 1px 0 var(--kbd-border-color),
+    0 0 0 0.1em var(--body-background) inset;
   padding: 0.25em 0.5em;
   vertical-align: text-bottom;
   white-space: nowrap; /* effectively ignores hyphens setting */
