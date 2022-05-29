@@ -4,7 +4,7 @@
   hyphens: auto;
   margin: 0;
   max-width: var(--doc-max-width);
-  padding: 0 32px 32px;
+  padding: 16px 32px 32px;
   letter-spacing: 0.16px;
 }
 
@@ -60,7 +60,6 @@
 }
 
 .doc h2:not(.discrete) {
-  border-bottom: 1px solid var(--section-divider-color);
   margin-left: -1rem;
   margin-right: -1rem;
   padding: 0.4rem 1rem 0.1rem;
@@ -1029,6 +1028,7 @@
   line-height: 2.25rem;
   font-weight: 400;
   letter-spacing: 0;
+  margin-bottom: 0.3rem;
 }
 
 /* h2 corresponds to semi-bold heading-03 */
@@ -1037,6 +1037,8 @@
   line-height: 28px;
   font-weight: 600;
   letter-spacing: 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* h3 does not have an equivalence */
@@ -1057,4 +1059,11 @@
   letter-spacing: 0.16px;
   line-height: 1.25rem;
   margin-top: 2rem;
+}
+
+.doc p {
+  margin: 0.5rem 0 1rem;
+  font-size: 14px;
+  color: #2d3f49;
+  line-height: 1.65;
 }
