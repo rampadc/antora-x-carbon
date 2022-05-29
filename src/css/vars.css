@@ -263,8 +263,8 @@
   --body-background: var(--color-white);
   --panel-background: var(--color-white);
   --panel-border-color: var(--color-gray-100);
-  --scrollbar-track-color: var(--color-gray-10);
-  --scrollbar-thumb-color: var(--color-gray-10);
+  --scrollbar-track-color: var(--color-gray-20);
+  --scrollbar-thumb-color: var(--color-gray-70);
   --scrollbar_hover-thumb-color: var(--color-gray-100-hover);
   /* navbar */
   --navbar-background: var(--color-gray-100);
