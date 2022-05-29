@@ -629,6 +629,10 @@
   text-align: left;
 }
 
+.doc .admonitionblock p {
+  margin-bottom: 0.5rem;
+}
+
 .doc .imageblock .title {
   margin-top: 0.5rem;
   padding-bottom: 0;
