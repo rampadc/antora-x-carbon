@@ -35,12 +35,6 @@
   height: var(--nav-height);
 }
 
-/* @media screen and (min-width: 769px) {
-  .nav {
-    box-shadow: 0.5px 0 3px var(--nav-border-color);
-  }
-} */
-
 @media screen and (min-width: 1024px) {
   .nav {
     top: var(--navbar-height);
@@ -58,6 +52,11 @@ a.nav-link.nav-section-semibold {
   padding-bottom: 8px;
 }
 
+.nav-link {
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
 .nav .panels {
   display: flex;
   flex-direction: column;
@@ -69,7 +68,7 @@ html.is-clipped--nav {
 }
 
 .nav-panel-menu {
-  overflow-y: scroll;
+  overflow-y: auto;
   overscroll-behavior: none;
   height: var(--nav-panel-menu-height);
 }
@@ -142,7 +141,6 @@ html.is-clipped--nav {
   height: unset;
   min-height: 34px;
   vertical-align: baseline;
-  border: 1px solid greenyellow;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -301,12 +299,9 @@ html.is-clipped--nav {
 
 .is-current-page[data-depth="1"] > span,
 .is-current-page[data-depth="1"] > a {
-  margin-left: calc(
-    -1 * (var(--toc-indention-first-level) + var(--toc-indention))
-  );
+  margin-left: calc(-1 * var(--toc-indention-first-level));
   padding-left: calc(
-    var(--toc-indention-first-level) + var(--toc-indention) -
-      var(--toc-border-width)
+    var(--toc-indention-first-level) - var(--toc-border-width)
   );
 }
 .is-current-page[data-depth="1"] > .nav-item-toggle ~ .nav-link {

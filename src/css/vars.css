@@ -375,9 +375,9 @@
   --toc-width--widescreen: calc(216 / var(--rem-base) * 1rem);
   --doc-max-width: calc(720 / var(--rem-base) * 1rem);
   --doc-max-width--desktop: calc(828 / var(--rem-base) * 1rem);
-  --toc-border-width: 8px;
-  --toc-indention-first-level: 8px;
-  --toc-indention: 16px;
+  --toc-border-width: 4px;
+  --toc-indention-first-level: 16px;
+  --toc-indention: 8px;
   --toc-border-color: var(--color-blue-60);
   /* stacking */
   --z-index-nav: 1;
