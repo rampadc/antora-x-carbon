@@ -284,12 +284,13 @@ html.is-clipped--nav {
   font-weight: var(--body-font-weight-bold);
 }
 
+/* Thanks to openliberty for setting the way */
 .is-current-page > span,
 .is-current-page > a {
   display: block;
   border-left: var(--toc-border-width) solid var(--toc-border-color);
   background: var(--navbar_hover-background);
-  margin-left: calc(-1 * var(--toc-indention-first-level)); /* todo: add 2px */
+  margin-left: calc(-1 * var(--toc-indention-first-level));
   padding-top: 8px;
   margin-top: -8px;
   padding-bottom: 8px;
@@ -346,6 +347,7 @@ html.is-clipped--nav {
     100% + 3 * (var(--toc-indention-first-level) + var(--toc-indention))
   );
 }
+/* End of openlibery docs inspiration */
 
 .nav-item.is-current-page {
   padding-bottom: 0;
@@ -353,4 +355,8 @@ html.is-clipped--nav {
 
 .nav-list > .nav-item:last-child {
   margin-bottom: -8px;
+}
+
+.nav-list > .nav-item[data-depth="1"]:first-child {
+  margin-top: -8px;
 }
