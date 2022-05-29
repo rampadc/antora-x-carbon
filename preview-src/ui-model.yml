@@ -18,7 +18,7 @@ site:
       latestVersion: *latest_version_abc
     - &component
       name: xyz
-      title: &component_title Project XYZ
+      title: &component_title App Configuration
       url: /xyz/6.0/index.html
       versions:
         - &latest_version_xyz

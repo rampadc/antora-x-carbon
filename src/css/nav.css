@@ -2,21 +2,21 @@
   position: fixed;
   top: var(--navbar-height);
   left: 0;
-  width: 100%;
-  font-size: calc(17 / var(--rem-base) * 1rem);
+  min-width: var(--nav-min-width);
+  font-size: 14px;
   z-index: var(--z-index-nav);
   visibility: hidden;
 }
 
 @media screen and (min-width: 769px) {
   .nav-container {
-    width: var(--nav-width);
+    width: var(--nav-min-width);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .nav-container {
-    font-size: calc(15.5 / var(--rem-base) * 1rem);
+    font-size: 14px;
     flex: none;
     position: static;
     top: 0;
@@ -35,11 +35,11 @@
   height: var(--nav-height);
 }
 
-@media screen and (min-width: 769px) {
+/* @media screen and (min-width: 769px) {
   .nav {
     box-shadow: 0.5px 0 3px var(--nav-border-color);
   }
-}
+} */
 
 @media screen and (min-width: 1024px) {
   .nav {
@@ -51,7 +51,7 @@
 }
 
 .nav a {
-  color: inherit;
+  color: var(--color-gray-30);
 }
 
 .nav .panels {
@@ -87,36 +87,49 @@ html.is-clipped--nav {
 
 .nav-menu {
   min-height: 100%;
-  padding: 0.5rem 0.75rem;
-  line-height: var(--nav-line-height);
+  /* line-height: var(--nav-line-height); */
   position: relative;
 }
 
 .nav-menu h3.title {
   color: var(--nav-heading-font-color);
   font-size: inherit;
-  font-weight: var(--body-font-weight-bold);
+  font-weight: 600;
   margin: 0;
-  padding: 0.25em 0 0.125em;
+  padding: 16px 16px 16px 16px;
+  letter-spacing: 0.16px;
+  line-height: 18px;
+  white-space: normal;
+  font-stretch: 100%;
+}
+
+.nav-menu hr {
+  margin: 0 1rem 0.5rem 1rem;
+  height: 1px;
+  background-color: var(--color-gray-70);
+  width: calc(100% - 2rem);
 }
 
 .nav-list {
   list-style: none;
-  margin: 0 0 0 0.75rem;
   padding: 0;
+  flex: 1 1 0%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 .nav-menu > .nav-list + .nav-list {
-  margin-top: 0.5rem;
+  margin-top: 1em;
 }
 
 .nav-item {
-  margin-top: 0.5em;
-}
-
-/* adds some breathing room below a nested list */
-.nav-item-toggle ~ .nav-list {
-  padding-bottom: 0.125rem;
+  height: unset;
+  min-height: 34px;
+  vertical-align: baseline;
+  padding-left: 8px;
+  border: 1px solid greenyellow;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 /* matches list without a title */
@@ -130,25 +143,30 @@ html.is-clipped--nav {
 }
 
 .nav-item-toggle {
-  background: transparent url(../img/caret.svg) no-repeat center / 50%;
-  border: none;
-  outline: none;
-  line-height: inherit;
-  padding: 0;
-  position: absolute;
-  height: calc(var(--nav-line-height) * 1em);
-  width: calc(var(--nav-line-height) * 1em);
-  margin-top: -0.05em;
-  margin-left: calc(var(--nav-line-height) * -1em);
+  background: url(../img/menu-arrow.svg) no-repeat;
+  height: 20px;
+  width: 20px;
+  transform: rotate(-90deg);
+  fill: var(--color-gray-30);
+  color: var(--color-gray-70);
 }
 
 .nav-item.is-active > .nav-item-toggle {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
-.is-current-page > .nav-link,
-.is-current-page > .nav-text {
+.nav-text {
   font-weight: var(--body-font-weight-bold);
+  color: var(--color-gray-30);
+}
+
+li.nav-item.is-current-page {
+  /* background-color: var(--navbar_hover-background); */
+  background-color: aquamarine;
+}
+
+.nav-section-semibold {
+  font-weight: 600;
 }
 
 .nav-panel-explore {
@@ -168,7 +186,7 @@ html.is-clipped--nav {
 }
 
 .nav-panel-explore .context {
-  font-size: calc(15 / var(--rem-base) * 1rem);
+  font-size: 14px;
   flex-shrink: 0;
   color: var(--nav-muted-color);
   box-shadow: 0 -1px 0 var(--nav-panel-divider-color);

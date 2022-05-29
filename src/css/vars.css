@@ -247,7 +247,7 @@
   --color-warm-gray-90-hover: #343232;
   --color-warm-gray-100-hover: #2c2626;
   /* fonts - IBM Design Language body-01 */
-  /* https: //www.ibm.com/design/language/typography/type-specs-ui */
+  /* https://www.ibm.com/design/language/typography/type-specs-ui */
   --rem-base: 16; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
   --body-font-size: 0.875rem;
   --body-font-size--desktop: 0.875rem;
@@ -287,6 +287,7 @@
   --nav-muted-color: var(--color-gray-30);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-white);
+  --nav-min-width: 18.5em;
   /* toolbar */
   --toolbar-background: var(--panel-background);
   --toolbar-border-color: var(--panel-border-color);
