@@ -5,7 +5,7 @@
   /* box-shadow: 0 1px 0 var(--toolbar-border-color); */
   border-bottom: 1px solid var(--color-gray-20);
   display: flex;
-  font-size: calc(15 / var(--rem-base) * 1rem);
+  font-size: 14px;
   height: var(--toolbar-height);
   justify-content: flex-start;
   position: sticky;

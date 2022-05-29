@@ -306,7 +306,7 @@
   --warning-color: #e18114;
   --warning-on-color: var(--color-white);
   /* doc */
-  --doc-font-color: var(--color-jet-50);
+  --doc-font-color: var(--color-gray-100);
   --doc-font-size: inherit;
   --doc-font-size--desktop: calc(17 / var(--rem-base) * 1rem);
   --doc-line-height: 1.6;
@@ -350,7 +350,7 @@
   /* toc */
   --toc-font-color: var(--nav-muted-color);
   --toc-heading-font-color: var(--doc-font-color);
-  --toc-border-color: var(--panel-border-color);
+  --toc-border-color: var(--color-gray-20);
   --toc-line-height: 1.2;
   /* footer */
   --footer-line-height: var(--doc-line-height);

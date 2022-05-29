@@ -10,8 +10,8 @@
 
 .toc .toc-menu h3 {
   color: var(--toc-heading-font-color);
-  font-size: calc(16 / var(--rem-base) * 1rem);
-  font-weight: var(--body-font-weight-bold);
+  font-size: 0 !important;
+  font-weight: 400;
   line-height: 1.3;
   margin: 0 -0.5px;
   padding-bottom: 0.25rem;
@@ -25,7 +25,7 @@
 }
 
 .toc .toc-menu ul {
-  font-size: calc(15 / var(--rem-base) * 1rem);
+  font-size: 14px;
   line-height: var(--toc-line-height);
   list-style: none;
   margin: 0;
@@ -51,11 +51,11 @@
 
 @media screen and (min-width: 1024px) {
   .toc .toc-menu h3 {
-    font-size: calc(15 / var(--rem-base) * 1rem);
+    font-size: 14px;
   }
 
   .toc .toc-menu ul {
-    font-size: calc(13.5 / var(--rem-base) * 1rem);
+    font-size: 14px;
   }
 }
 
@@ -64,19 +64,20 @@
 }
 
 .toc .toc-menu li[data-level="2"] a {
-  padding-left: 1.25rem;
-}
-
-.toc .toc-menu li[data-level="3"] a {
   padding-left: 2rem;
 }
 
+.toc .toc-menu li[data-level="3"] a {
+  padding-left: 4rem;
+}
+
 .toc .toc-menu a {
-  color: inherit;
-  border-left: 2px solid var(--toc-border-color);
+  color: #828282;
+  border-left: 4px solid var(--color-gray-20);
   display: inline-block;
-  padding: 0.25rem 0 0.25rem 0.5rem;
+  padding: 4px 16px;
   text-decoration: none;
+  line-height: 21px;
 }
 
 .sidebar.toc .toc-menu a {
@@ -85,11 +86,11 @@
 }
 
 .toc .toc-menu a:hover {
-  color: var(--link-font-color);
+  color: var(--color-blue-60);
 }
 
 .toc .toc-menu a.is-active {
-  border-left-color: var(--link-font-color);
+  border-left-color: var(--color-blue-60);
   color: var(--doc-font-color);
 }
 
