@@ -9,9 +9,9 @@
 }
 
 .toc .toc-menu h3 {
-  color: var(--toc-heading-font-color);
-  font-size: 0 !important;
-  font-weight: 400;
+  color: var(--color-gray-100);
+  font-size: 14px;
+  font-weight: 600;
   line-height: 1.3;
   margin: 0 -0.5px;
   padding-bottom: 0.25rem;
