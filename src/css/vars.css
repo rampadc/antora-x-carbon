@@ -291,7 +291,7 @@
   /* toolbar */
   --toolbar-background: var(--panel-background);
   --toolbar-border-color: var(--panel-border-color);
-  --toolbar-font-color: var(--color-gray-70);
+  --toolbar-font-color: var(--color-blue-60);
   --toolbar-muted-color: var(--color-gray-40);
   --page-version-menu-background: var(--color-smoke-70);
   --page-version-missing-font-color: var(--color-gray-40);
@@ -360,7 +360,7 @@
   --footer-link-font-color: var(--color-jet-80);
   /* dimensions and positioning */
   --navbar-height: 48px; /* 48px or 3rem, 48px works right */
-  --toolbar-height: calc(45 / var(--rem-base) * 1rem);
+  --toolbar-height: 3.5rem;
   --drawer-height: var(--toolbar-height);
   --body-top: var(--navbar-height);
   --body-min-height: calc(100vh - var(--body-top));
