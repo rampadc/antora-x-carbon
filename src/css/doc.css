@@ -151,10 +151,6 @@
   margin: 0;
 }
 
-.doc blockquote {
-  margin: 0;
-}
-
 .doc .paragraph.lead > p {
   font-size: calc(18 / var(--rem-base) * 1rem);
 }
@@ -466,19 +462,28 @@
 
 .doc .quoteblock,
 .doc .verseblock {
-  background: var(--quote-background);
-  border-left: 5px solid var(--quote-border-color);
-  color: var(--quote-font-color);
+  width: 75%;
 }
 
-.doc .quoteblock {
-  padding: 0.25rem 2rem 1.25rem;
+.doc blockquote,
+.doc .verseblock {
+  margin: 2.5rem 0 0 1rem;
+  padding-left: 1ch;
+}
+
+.doc .quoteblock .attribution,
+.doc .quoteblock cite {
+  margin-top: 0.25rem;
+  color: var(--color-gray-100);
+  font-style: italic;
+  text-indent: 0;
+  letter-spacing: 0.16px;
+  font-weight: 400;
+  line-height: 1.42857;
 }
 
 .doc .quoteblock .attribution {
-  color: var(--quote-attribution-font-color);
-  font-size: calc(15 / var(--rem-base) * 1rem);
-  margin-top: 0.75rem;
+  margin-left: 2.5rem;
 }
 
 .doc .quoteblock blockquote {
@@ -489,13 +494,21 @@
   font-style: italic;
 }
 
-.doc .quoteblock cite {
-  padding-left: 1em;
+.doc .quoteblock .paragraph p,
+.verseblock .content pre {
+  color: var(--color-gray-100);
+  quotes: none;
+  font-size: 1.5rem;
+  line-height: 1.334;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: 0;
 }
 
-.doc .verseblock {
-  font-size: 1.15em;
-  padding: 1rem 2rem;
+.doc .quoteblock cite {
+  padding-left: 1em;
+  margin-top: 0.25rem;
 }
 
 .doc .verseblock pre {
