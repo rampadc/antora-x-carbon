@@ -1,9 +1,10 @@
 footer.footer {
-  background-color: var(--footer-background);
-  color: var(--footer-font-color);
-  font-size: calc(15 / var(--rem-base) * 1rem);
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-10);
+  font-size: 14px;
   line-height: var(--footer-line-height);
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
+  height: 0;
 }
 
 .footer p {
