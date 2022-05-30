@@ -39,16 +39,10 @@ jobs:
       - name: Build bundle
         id: build_bundle
         run: gulp bundle
-
-      # Detects any updates to package-lock.json and package.json
-      # and commits the files.
-      # See https://github.com/marketplace/actions/add-commit?version=v4.1.0
-      # for use options.
-      - name: Commit packages
-        uses: EndBug/add-and-commit@v4
+      - name: Publish package
+        uses: actions/upload-artifact@v2
         with:
-          message: "Commit files for CI workflow"
-          # Commits these files if and only if there are changes.
-          add: "package-lock.json package.json"
+          name: ui-bundle.zip
+          path: ./build/ui-bundle.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
