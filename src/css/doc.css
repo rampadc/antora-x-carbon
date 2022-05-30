@@ -17,6 +17,16 @@
   color: var(--color-gray-100);
   hyphens: none;
   margin: 1rem 0 0;
+  padding-top: 1rem;
+}
+
+.sect1 h1,
+.sect1 h2,
+.sect1 h3,
+.sect1 h4,
+.sect1 h5,
+.sect1 h6 {
+  padding-top: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -56,18 +66,13 @@
   background: var(--abstract-background);
   font-size: 1.8em;
   margin: 1.5rem -1rem 0;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .doc h2:not(.discrete) {
   margin-left: -1rem;
   margin-right: -1rem;
-  padding: 0.4rem 1rem 0.1rem;
-}
-
-.doc h3:not(.discrete),
-.doc h4:not(.discrete) {
-  font-weight: var(--alt-heading-font-weight);
+  padding: 1rem 1rem 0.1rem;
 }
 
 .doc h1 .anchor,
@@ -488,7 +493,8 @@
 }
 
 .doc .quoteblock .attribution {
-  margin-left: 2.5rem;
+  margin-left: 1rem;
+  padding-left: 1ch;
 }
 
 .doc .quoteblock blockquote {
@@ -519,6 +525,7 @@
 .doc .verseblock pre {
   font-family: inherit;
   font-size: inherit;
+  font-style: italic;
 }
 
 .doc ol,
