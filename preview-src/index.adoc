@@ -169,6 +169,13 @@ At ornatus splendide sed, phaedrum omittantur usu an, vix an noster voluptatibus
 . etiam pulvinar inceptos velit quisque aptent himenaeos
 . lacus volutpat semper porttitor aliquet ornare primis nulla enim
 
+This is how inline code works: `codeblock`.
+
+.Parts of an atom
+. himenaeos
+. facilisis
+. same
+
 Natum facilisis theophrastus an duo.
 No sea, at invenire voluptaria mnesarchum has.
 
