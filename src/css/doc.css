@@ -209,7 +209,7 @@
 }
 
 .doc table.tableblock {
-  font-size: calc(15 / var(--rem-base) * 1rem);
+  font-size: 14px;
   margin: 1.5rem 0 0;
 }
 
