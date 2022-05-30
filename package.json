@@ -51,8 +51,5 @@
     "stylelint-config-standard": "~20.0",
     "vinyl-buffer": "~1.0",
     "vinyl-fs": "~3.0"
-  },
-  "dependencies": {
-    "@ibm/plex": "^6.0.2"
   }
 }
