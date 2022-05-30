@@ -8,7 +8,7 @@
 name: CI at GitHub
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
 
 jobs:
