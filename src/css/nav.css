@@ -163,9 +163,6 @@ html.is-clipped--nav {
   color: var(--color-gray-30);
   transform: rotate(0deg);
   transition: transform 110ms;
-}
-
-.nav-item-toggle {
   float: right;
   margin-right: 16px;
   border: none;
@@ -242,9 +239,6 @@ button.nav-item-toggle {
   overflow-y: scroll;
   max-height: 100%;
   display: block;
-}
-
-.nav-panel-explore .components {
   color: var(--color-gray-100);
 }
 
@@ -311,18 +305,21 @@ button.nav-item-toggle {
   padding-top: 8px;
   margin-top: -8px;
   padding-bottom: 8px;
-  padding-left: calc(
-    var(--toc-indention-first-level) - var(--toc-border-width)
-  );
+  padding-left:
+    calc(
+      var(--toc-indention-first-level) - var(--toc-border-width)
+    );
 }
 
 .is-current-page[data-depth="1"] > span,
 .is-current-page[data-depth="1"] > a {
   margin-left: calc(-1 * var(--toc-indention-first-level));
-  padding-left: calc(
-    var(--toc-indention-first-level) - var(--toc-border-width)
-  );
+  padding-left:
+    calc(
+      var(--toc-indention-first-level) - var(--toc-border-width)
+    );
 }
+
 .is-current-page[data-depth="1"] > .nav-item-toggle ~ .nav-link {
   display: inline-block;
   width: calc(100% + (var(--toc-indention-first-level) + var(--toc-indention)));
@@ -330,36 +327,36 @@ button.nav-item-toggle {
 
 .is-current-page[data-depth="2"] > span,
 .is-current-page[data-depth="2"] > a {
-  margin-left: calc(
-    -1 * (var(--toc-indention-first-level) + 2 * var(--toc-indention))
-  );
-  padding-left: calc(
-    var(--toc-indention-first-level) + 2 * var(--toc-indention) -
+  margin-left:
+    calc(
+      -1 * (var(--toc-indention-first-level) + 2 * var(--toc-indention))
+    );
+  padding-left:
+    calc(
+      var(--toc-indention-first-level) + 2 * var(--toc-indention) -
       var(--toc-border-width)
-  );
+    );
 }
+
 .is-current-page[data-depth="2"] > .nav-item-toggle ~ .nav-link {
   display: inline-block;
-  width: calc(
-    100% + 2 * (var(--toc-indention-first-level) + var(--toc-indention))
-  );
+  width:
+    calc(
+      100% + 2 * (var(--toc-indention-first-level) + var(--toc-indention))
+    );
 }
 
 .is-current-page[data-depth="3"] > span,
 .is-current-page[data-depth="3"] > a {
-  margin-left: calc(
-    -1 * (var(--toc-indention-first-level) + 3 * var(--toc-indention))
-  );
-  padding-left: calc(
-    var(--toc-indention-first-level) + 3 * var(--toc-indention) -
+  margin-left:
+    calc(
+      -1 * (var(--toc-indention-first-level) + 3 * var(--toc-indention))
+    );
+  padding-left:
+    calc(
+      var(--toc-indention-first-level) + 3 * var(--toc-indention) -
       var(--toc-border-width)
-  );
-}
-.is-current-page[data-depth="2"] > .nav-item-toggle ~ .nav-link {
-  display: inline-block;
-  width: calc(
-    100% + 3 * (var(--toc-indention-first-level) + var(--toc-indention))
-  );
+    );
 }
 /* End of openlibery docs inspiration */
 

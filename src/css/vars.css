@@ -1,10 +1,10 @@
 :root {
   /* colors */
-  --color-black: #000000;
-  --color-black-100: #000000;
+  --color-black: #000;
+  --color-black-100: #000;
   --color-black-hover: #212121;
-  --color-white: #ffffff;
-  --color-white-0: #ffffff;
+  --color-white: #fff;
+  --color-white-0: #fff;
   --color-white-hover: #e8e8e8;
   --color-yellow-10: #fcf4d6;
   --color-yellow-20: #fddc69;
@@ -40,7 +40,7 @@
   --color-orange-20-hover: #ffc69e;
   --color-orange-30-hover: #ff9d57;
   --color-orange-40-hover: #fa6800;
-  --color-orange-50-hover: #cc5500;
+  --color-orange-50-hover: #c50;
   --color-orange-60-hover: #9e4200;
   --color-orange-70-hover: #a84400;
   --color-orange-80-hover: #753300;
@@ -136,7 +136,7 @@
   --color-cyan-80: #003a6d;
   --color-cyan-90: #012749;
   --color-cyan-100: #061727;
-  --color-cyan-10-hover: #cceeff;
+  --color-cyan-10-hover: #cef;
   --color-cyan-20-hover: #99daff;
   --color-cyan-30-hover: #57beff;
   --color-cyan-40-hover: #059fff;
@@ -219,12 +219,12 @@
   --color-gray-10-hover: #e8e8e8;
   --color-gray-20-hover: #d1d1d1;
   --color-gray-30-hover: #b5b5b5;
-  --color-gray-40-hover: #999999;
+  --color-gray-40-hover: #999;
   --color-gray-50-hover: #7a7a7a;
   --color-gray-60-hover: #5e5e5e;
   --color-gray-70-hover: #636363;
   --color-gray-80-hover: #474747;
-  --color-gray-90-hover: #333333;
+  --color-gray-90-hover: #333;
   --color-gray-100-hover: #292929;
   --color-warm-gray-10: #f7f3f2;
   --color-warm-gray-20: #e5e0df;
@@ -254,10 +254,15 @@
   --body-font-size--print: 0.875rem;
   --body-line-height: 1.25rem;
   --body-font-color: var(--color-gray-100);
-  --body-font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --body-font-family: "IBM Plex Sans", "Helvetica Neue", arial, sans-serif;
   --body-font-weight-bold: 600;
-  --monospace-font-family: "IBM Plex Mono", "Menlo", "DejaVu Sans Mono",
-    "Bitstream Vera Sans Mono", Courier, monospace;
+  --monospace-font-family:
+    "IBM Plex Mono",
+    "Menlo",
+    "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono",
+    courier,
+    monospace;
   --monospace-font-weight-bold: 600;
   /* base */
   --body-background: var(--color-white);
@@ -342,11 +347,12 @@
   --sidebar-background: var(--color-smoke-90);
   --table-border-color: var(--panel-border-color);
   --table-stripe-background: var(--panel-background);
-  --table-footer-background: linear-gradient(
-    to bottom,
-    var(--color-smoke-70) 0%,
-    var(--color-white) 100%
-  );
+  --table-footer-background:
+    linear-gradient(
+      to bottom,
+      var(--color-smoke-70) 0%,
+      var(--color-white) 100%
+    );
   /* toc */
   --toc-font-color: var(--nav-muted-color);
   --toc-heading-font-color: var(--doc-font-color);

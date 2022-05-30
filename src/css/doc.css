@@ -349,18 +349,23 @@
   width: 100%;
   word-wrap: anywhere;
 }
+
 .admonitionblock.tip td.content {
   background: var(--color-green-10);
 }
+
 .admonitionblock.note td.content {
   background: var(--color-blue-10);
 }
+
 .admonitionblock.warning td.content {
   background: var(--color-yellow-10);
 }
+
 .admonitionblock.caution td.content {
   background: var(--color-yellow-10);
 }
+
 .admonitionblock.important td.content {
   background: var(--color-red-10);
 }
@@ -955,7 +960,8 @@
   background: var(--kbd-background);
   border: 1px solid var(--kbd-border-color);
   border-radius: 0.25em;
-  box-shadow: 0 1px 0 var(--kbd-border-color),
+  box-shadow:
+    0 1px 0 var(--kbd-border-color),
     0 0 0 0.1em var(--body-background) inset;
   padding: 0.25em 0.5em;
   vertical-align: text-bottom;
