@@ -619,13 +619,13 @@
 .doc .openblock .title,
 .doc .videoblock .title,
 .doc .tableblock caption {
-  color: var(--caption-font-color);
-  font-size: calc(16 / var(--rem-base) * 1rem);
-  font-weight: var(--caption-font-weight);
-  font-style: italic;
-  hyphens: none;
-  letter-spacing: 0.01em;
-  padding-bottom: 0.075rem;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.16px;
+  line-height: 1.25rem;
+  margin-top: 2rem;
+  color: var(--color-gray-100);
+  margin-bottom: 0.5rem;
   text-align: left;
 }
 
