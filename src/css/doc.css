@@ -506,7 +506,7 @@ p.tableblock {
 }
 
 .doc .quoteblock .attribution {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   padding-left: 1ch;
 }
 
@@ -682,40 +682,14 @@ p.tableblock {
 }
 
 .doc details > summary {
-  display: block;
   position: relative;
   line-height: var(--doc-line-height);
   margin-bottom: 0.5rem;
+  margin-left: -1.5rem;
 }
 
-.doc details > summary::-webkit-details-marker {
-  display: none;
-}
-
-.doc details > summary::before {
-  content: "";
-  border: solid transparent;
-  border-left-color: currentColor;
-  border-width: 0.3em 0 0.3em 0.5em;
-  position: absolute;
-  top: calc((var(--doc-line-height) * 0.5 - 0.3) * 1em);
-  left: -1rem;
-  transform: translateX(15%);
-}
-
-.doc details[open] > summary::before {
-  border-color: currentColor transparent transparent;
-  border-width: 0.5rem 0.3rem 0;
-  transform: translateY(15%);
-}
-
-.doc details > summary::after {
-  content: "";
-  width: 1rem;
-  height: 1em;
-  position: absolute;
-  top: calc((var(--doc-line-height) * 0.5 - 0.5) * 1em);
-  left: -1rem;
+.doc details > summary > * {
+  display: inline;
 }
 
 .doc details.result {
