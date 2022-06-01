@@ -1,0 +1,38 @@
+---
+# GitHub workflow for commits pushed to the antori-ui-bundle repo
+
+# This workflow will commit "package-lock.json" and "package.json" if
+# changes occur to those files.
+# Committing such changes speeds up future builds.
+
+name: Push to GitHub Pages
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    # Specify environment (to maintain stability).
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        # Specify Node.js version (to maintain stability).
+        node-version: [14.16.1]
+    steps:
+      - name: Clone the repo
+        uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Run with CI
+        run: npm ci
+      - name: Build preview
+        id: build_preview
+        run: gulp preview:build
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public
