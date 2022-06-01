@@ -288,11 +288,13 @@ p.tableblock {
 }
 
 /* Striped by default */
-.doc table > tbody > tr:nth-of-type(even) {
+.doc table.stripes-even > tbody > tr:nth-of-type(even),
+.doc table.stripes-odd > tbody > tr:nth-of-type(odd) {
   background-color: var(--color-gray-20);
 }
 
-.doc table > tbody > tr:nth-of-type(odd) {
+.doc table.stripes-odd > tbody > tr:nth-of-type(even),
+.doc table.stripes-odd > tbody > tr:nth-of-type(odd) {
   background-color: var(--color-gray-10);
 }
 
