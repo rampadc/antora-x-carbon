@@ -617,23 +617,37 @@ p.tableblock {
   list-style-type: lower-greek;
 }
 
-.doc ul.checklist {
-  padding-left: 0.5rem;
+.doc .ulist.checklist {
+  margin-left: 0;
 }
 
 .doc ul.checklist p > i.fa-check-square-o:first-child,
 .doc ul.checklist p > i.fa-square-o:first-child {
   display: inline-flex;
   justify-content: center;
-  width: 1.25rem;
+  width: 16px;
 }
 
 .doc ul.checklist i.fa-check-square-o::before {
-  content: "\2713";
+  display: block;
+  content: ' ';
+  background-image: url('../img/checkbox--checked--filled.svg');
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+  transform: translate(-8px, 4px);
+  fill: var(--color-blue-60);
 }
 
 .doc ul.checklist i.fa-square-o::before {
-  content: "\274f";
+  display: block;
+  content: ' ';
+  background-image: url('../img/checkbox.svg');
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+  transform: translate(-8px, 4px);
+  fill: var(--color-blue-60);
 }
 
 .doc .dlist .dlist,
