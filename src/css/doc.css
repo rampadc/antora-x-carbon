@@ -211,7 +211,7 @@
 .doc .partintro,
 .doc details,
 .doc hr {
-  margin: 1rem 0 0;
+  margin: 1.5rem 1ch 0;
 }
 
 /* Example table: https://carbondesignsystem.com/components/data-table/usage/ */
@@ -304,7 +304,13 @@ p.tableblock {
 }
 
 .doc table.tableblock > tfoot {
-  background: var(--table-footer-background);
+  background: var(--color-gray-10);
+  border-top: 1px solid var(--color-gray-20);
+  color: var(--color-gray-100);
+}
+
+.doc table.tableblock > tfoot p.tableblock {
+  color: var(--color-gray-100);
 }
 
 .doc .halign-left {
@@ -575,6 +581,7 @@ p.tableblock {
 
 .doc ol.arabic {
   list-style-type: decimal;
+  margin-top: 1.5rem;
 }
 
 .doc ol.decimal {
@@ -629,7 +636,7 @@ p.tableblock {
 .doc .ulist .dlist,
 .doc .ulist .olist,
 .doc .ulist .ulist {
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .doc .olist li + li,
