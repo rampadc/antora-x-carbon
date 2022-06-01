@@ -213,9 +213,36 @@
   margin: 1rem 0 0;
 }
 
+/* Example table: https://carbondesignsystem.com/components/data-table/usage/ */
 .doc table.tableblock {
   font-size: 14px;
   margin: 1.5rem 0 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.doc table.tableblock thead {
+  background-color: var(--color-gray-20);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.16px;
+  line-height: 1.28572;
+}
+
+.doc table.tableblock thead tr {
+  border: none;
+  height: 3.42rem;
+}
+
+.doc table.tableblock thead tr th {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  vertical-align: middle;
+  color: var(--color-gray-100);
+}
+
+p.tableblock {
+  color: var(--color-gray-70);
 }
 
 .doc table.tableblock + * {
@@ -232,41 +259,12 @@
 
 .doc table.tableblock th,
 .doc table.tableblock td {
-  padding: 0.5rem;
+  padding: 16px;
 }
 
 .doc table.tableblock,
 .doc table.tableblock > * > tr > * {
   border: 0 solid var(--table-border-color);
-}
-
-.doc table.grid-all > * > tr > * {
-  border-width: 1px;
-}
-
-.doc table.grid-cols > * > tr > * {
-  border-width: 0 1px;
-}
-
-.doc table.grid-rows > * > tr > * {
-  border-width: 1px 0;
-}
-
-.doc table.grid-all > thead th,
-.doc table.grid-rows > thead th {
-  border-bottom-width: 2.5px;
-}
-
-.doc table.frame-all {
-  border-width: 1px;
-}
-
-.doc table.frame-ends {
-  border-width: 1px 0;
-}
-
-.doc table.frame-sides {
-  border-width: 0 1px;
 }
 
 .doc table.frame-none > colgroup + * > :first-child > *,
@@ -289,11 +287,17 @@
   border-right-width: 0;
 }
 
-.doc table.stripes-all > tbody > tr,
-.doc table.stripes-odd > tbody > tr:nth-of-type(odd),
-.doc table.stripes-even > tbody > tr:nth-of-type(even),
-.doc table.stripes-hover > tbody > tr:hover {
-  background: var(--table-stripe-background);
+/* Striped by default */
+.doc table > tbody > tr:nth-of-type(even) {
+  background-color: var(--color-gray-20);
+}
+
+.doc table > tbody > tr:nth-of-type(odd) {
+  background-color: var(--color-gray-10);
+}
+
+.doc table > tbody > tr:hover > td p {
+  color: var(--color-gray-100);
 }
 
 .doc table.tableblock > tfoot {
@@ -1091,7 +1095,7 @@
   margin-top: 2rem;
 }
 
-.doc p {
+.doc p:not(.tableblock) {
   margin: 0.5rem 0 1rem;
   font-size: 14px;
   color: #2d3f49;

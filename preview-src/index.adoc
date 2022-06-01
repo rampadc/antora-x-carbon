@@ -210,7 +210,7 @@ agam graeci
 At ornatus splendide sed.
 
 .Library dependencies
-[#dependencies%autowidth%footer,stripes=hover]
+[#dependencies%autowidth%footer,stripes=even]
 |===
 |Library |Version
 
