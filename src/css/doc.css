@@ -681,7 +681,7 @@ p.tableblock {
 .doc .ulist .dlist,
 .doc .ulist .olist,
 .doc .ulist .ulist {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .doc .olist li + li,
