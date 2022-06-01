@@ -196,10 +196,6 @@
 }
 
 .doc .paragraph,
-.doc .dlist,
-.doc .hdlist,
-.doc .olist,
-.doc .ulist,
 .doc .exampleblock,
 .doc .imageblock,
 .doc .listingblock,
@@ -211,6 +207,13 @@
 .doc .partintro,
 .doc details,
 .doc hr {
+  margin: 1rem 0 0;
+}
+
+.doc .dlist,
+.doc .hdlist,
+.doc .olist,
+.doc .ulist {
   margin: 1.5rem 1ch 0;
 }
 
@@ -678,7 +681,7 @@ p.tableblock {
 }
 
 .doc details {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 .doc details > summary {
