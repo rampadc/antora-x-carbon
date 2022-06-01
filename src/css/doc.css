@@ -510,7 +510,7 @@ p.tableblock {
 
 .doc .quoteblock .attribution {
   margin-left: 1.5rem;
-  padding-left: 1ch;
+  margin-top: 0.5rem;
 }
 
 .doc .quoteblock blockquote {
