@@ -297,7 +297,6 @@ p.tableblock {
   border-right-width: 0;
 }
 
-/* Striped by default */
 .doc table.stripes-even > tbody > tr:nth-of-type(even),
 .doc table.stripes-odd > tbody > tr:nth-of-type(even) {
   background-color: var(--color-gray-20);
@@ -308,12 +307,31 @@ p.tableblock {
   background-color: var(--color-gray-10);
 }
 
+.doc table.stripes-none > tbody > tr {
+  background-color: var(--color-gray-10);
+  border-bottom: 1px solid var(--color-gray-20);
+}
+
+.doc table.stripes-none > tbody > tr:hover {
+  background-color: var(--color-gray-10-hover);
+}
+
+.doc table.stripes-none > tbody > tr:hover > td p {
+  color: var(--color-gray-100);
+}
+
 .doc table > tbody > tr:hover > td p {
   color: var(--color-gray-100);
 }
 
 .doc table.tableblock > tfoot {
   background: var(--color-gray-10);
+  border-top: 1px solid var(--color-gray-20);
+  color: var(--color-gray-100);
+}
+
+.doc table.tableblock.stripes-none > tfoot {
+  background: var(--color-gray-20);
   border-top: 1px solid var(--color-gray-20);
   color: var(--color-gray-100);
 }
