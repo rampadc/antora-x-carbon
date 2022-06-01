@@ -5087,7 +5087,24 @@ p.tableblock {
   color: var(--color-gray-100);
 }
 
-.doc table > tbody > tr:hover > td p {
+.doc table.tableblock:not(.stripes-none):not(.stripes-odd):not(.stripes-even) > tbody > tr {
+  background-color: #f4f4f4;
+  background-color: var(--color-gray-10);
+  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--color-gray-20);
+}
+
+.doc table.tableblock:not(.stripes-none):not(.stripes-odd):not(.stripes-even) > tbody > tr:hover {
+  background-color: #e8e8e8;
+  background-color: var(--color-gray-10-hover);
+}
+
+.doc table.tableblock:not(.stripes-none):not(.stripes-odd):not(.stripes-even) > tbody > tr:hover > td p {
+  color: #161616;
+  color: var(--color-gray-100);
+}
+
+.doc table.tableblock > tbody > tr:hover > td p {
   color: #161616;
   color: var(--color-gray-100);
 }
@@ -5102,6 +5119,15 @@ p.tableblock {
 }
 
 .doc table.tableblock.stripes-none > tfoot {
+  background: #e0e0e0;
+  background: var(--color-gray-20);
+  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--color-gray-20);
+  color: #161616;
+  color: var(--color-gray-100);
+}
+
+.doc table.tableblock:not(.stripes-none):not(.stripes-odd):not(.stripes-even) > tfoot {
   background: #e0e0e0;
   background: var(--color-gray-20);
   border-top: 1px solid #e0e0e0;
