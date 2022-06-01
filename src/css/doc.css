@@ -140,8 +140,7 @@
 .doc .colist > table code {
   color: var(--code-font-color);
   background: var(--code-background);
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 0.0715rem 8px;
   border-radius: 4px;
   font-size: 0.857rem;
 }
@@ -196,6 +195,8 @@
 }
 
 .doc .paragraph,
+.doc .dlist,
+.doc .hdlist,
 .doc .exampleblock,
 .doc .imageblock,
 .doc .listingblock,
@@ -210,8 +211,6 @@
   margin: 1rem 0 0;
 }
 
-.doc .dlist,
-.doc .hdlist,
 .doc .olist,
 .doc .ulist {
   margin: 1.5rem 1ch 0;
