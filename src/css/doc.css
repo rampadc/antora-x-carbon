@@ -97,7 +97,14 @@
 .doc h4 .anchor::before,
 .doc h5 .anchor::before,
 .doc h6 .anchor::before {
-  content: "\00a7";
+  display: block;
+  content: ' ';
+  background-image: url('../img/link.svg');
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+  transform: translate(-8px, 4px);
+  fill: var(--color-blue-60);
 }
 
 .doc h1:hover .anchor,
