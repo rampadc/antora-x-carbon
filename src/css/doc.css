@@ -140,9 +140,10 @@
 .doc .colist > table code {
   color: var(--code-font-color);
   background: var(--code-background);
-  border-radius: 0.25em;
-  font-size: 0.95em;
-  padding: 0.125em 0.25em;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 4px;
+  font-size: 0.857rem;
 }
 
 .doc code,
@@ -289,11 +290,11 @@ p.tableblock {
 
 /* Striped by default */
 .doc table.stripes-even > tbody > tr:nth-of-type(even),
-.doc table.stripes-odd > tbody > tr:nth-of-type(odd) {
+.doc table.stripes-odd > tbody > tr:nth-of-type(even) {
   background-color: var(--color-gray-20);
 }
 
-.doc table.stripes-odd > tbody > tr:nth-of-type(even),
+.doc table.stripes-even > tbody > tr:nth-of-type(odd),
 .doc table.stripes-odd > tbody > tr:nth-of-type(odd) {
   background-color: var(--color-gray-10);
 }

@@ -78,7 +78,7 @@ Voila!
 
 === Some Code
 
-How about some code?
+How about some code? `node -v`
 
 [,js]
 ----
