@@ -5,15 +5,20 @@
       {{#if env.SITE_SEARCH_PROVIDER}}
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
-          <input id="search-input" type="text" placeholder="Search the docs"{{#if page.home}} autofocus{{/if}}>
+          <button tabindex="-1" id="search-icon" type="button" aria-label="Search" aria-expanded="true">
+            <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="#c7c7c7" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z"></path>
+            </svg>
+          </button>
+          <input id="search-input" type="text" placeholder="Search"{{#if page.home}} autofocus{{/if}}>
         </div>
       </div>
       {{/if}}
-      <button class="navbar-burger" data-target="topbar-nav">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<!--      <button class="navbar-burger" data-target="topbar-nav">-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--      </button>-->
     </div>
 <!--    <div id="topbar-nav" class="navbar-menu">-->
 <!--      <div class="navbar-end">-->

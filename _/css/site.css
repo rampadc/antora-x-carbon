@@ -6278,14 +6278,60 @@ body {
 }
 
 #search-input {
-  color: #333;
+  color: #f4f4f4;
+  color: var(--color-gray-10);
   font-family: inherit;
-  font-size: 0.95rem;
-  width: 150px;
-  border: 1px solid #dbdbdb;
-  border-radius: 0.1em;
-  line-height: 1.5;
-  padding: 0 0.25em;
+  font-size: 16px;
+  width: 464px;
+  height: 48px;
+  padding: 0 0 0 48px;
+  background: #393939;
+  background: var(--color-gray-80);
+  border-bottom: 1px solid #393939;
+  border-bottom: 1px solid var(--color-gray-80);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+#search-input::-webkit-input-placeholder {
+  color: #6f6f6f;
+  color: var(--color-gray-60);
+  opacity: 1 !important;
+  font-size: 16px;
+  padding-left: 48px !important;
+}
+
+#search-input::-moz-placeholder {
+  color: #6f6f6f;
+  color: var(--color-gray-60);
+  opacity: 1 !important;
+  font-size: 16px;
+  padding-left: 48px !important;
+}
+
+#search-input:-ms-input-placeholder {
+  color: #6f6f6f;
+  color: var(--color-gray-60);
+  opacity: 1 !important;
+  font-size: 16px;
+  padding-left: 48px !important;
+}
+
+#search-input::-ms-input-placeholder {
+  color: #6f6f6f;
+  color: var(--color-gray-60);
+  opacity: 1 !important;
+  font-size: 16px;
+  padding-left: 48px !important;
+}
+
+#search-input::placeholder {
+  color: #6f6f6f;
+  color: var(--color-gray-60);
+  opacity: 1 !important;
+  font-size: 16px;
+  padding-left: 48px !important;
 }
 
 #search-input:disabled {
@@ -6313,6 +6359,24 @@ body {
 
 #search-input:disabled::placeholder {
   color: #4c4c4c;
+}
+
+#search-field:focus-within {
+  outline: 2px solid #fff !important;
+  outline-offset: -2px !important;
+}
+
+#search-icon {
+  pointer-events: none;
+  background: #393939;
+  background: var(--color-gray-80);
+  width: 48px;
+  height: 48px;
+  border-bottom: 1px solid #393939;
+  border-bottom: 1px solid var(--color-gray-80);
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 
 .navbar-burger {
@@ -6399,6 +6463,10 @@ body {
   padding: 1.14rem 1.14rem;
 }
 
+.navbar-item.search {
+  padding-right: 0 !important;
+}
+
 .navbar-item.has-dropdown {
   padding: 0;
 }
@@ -6461,7 +6529,7 @@ body {
 
 @media screen and (min-width: 769px) {
   #search-input {
-    width: 200px;
+    width: 464px;
   }
 }
 
