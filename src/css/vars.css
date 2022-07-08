@@ -291,7 +291,7 @@
   --nav-heading-font-color: var(--color-gray-70);
   --nav-muted-color: var(--color-gray-30);
   --nav-secondary-background: var(--color-white);
-  --nav-min-width: 18.5em;
+  --nav-min-width: 256px;
   /* toolbar */
   --toolbar-background: var(--panel-background);
   --toolbar-border-color: var(--panel-border-color);
