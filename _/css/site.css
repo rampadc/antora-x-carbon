@@ -3573,7 +3573,7 @@
   --navbar-menu-font-color: var(--navbar-font-color);
   --navbar-menu_hover-background: var(--navbar_hover-background);
   /* nav */
-  --nav-background: var(--color-gray-90);
+  --nav-background: var(--color-gray-100);
   --nav-border-color: var(--color-gray-10);
   --nav-line-height: 1.25;
   --nav-heading-font-color: var(--color-gray-70);
@@ -3925,7 +3925,7 @@ object[type="image/svg+xml"]:not([width]) {
 }
 
 .nav {
-  background: #262626;
+  background: #161616;
   background: var(--nav-background);
   position: relative;
   top: 3.5rem;
@@ -4033,9 +4033,9 @@ html.is-clipped--nav {
 
 .nav-menu hr {
   margin: 0 1rem 0.5rem 1rem;
-  height: 1px;
-  background-color: #525252;
-  background-color: var(--color-gray-70);
+  border-style: solid;
+  border-color: #393939;
+  border-color: var(--color-gray-80);
   width: calc(100% - 2rem);
 }
 
@@ -4056,17 +4056,13 @@ html.is-clipped--nav {
   margin-top: 0;
 }
 
-.nav-list:not(.is-active) > .nav-item:first-child {
+.nav-list > .nav-item:first-child {
   display: block;
   margin-top: 8px;
 }
 
-.nav-item.is-active .nav-item:first-child {
+.nav-item.is-current-page.is-active .nav-item:first-child {
   margin-top: 0;
-}
-
-.nav-item.is-active .nav-item.is-active.is-current-page:first-child {
-  margin-top: 8px;
 }
 
 .nav-item {
@@ -4151,6 +4147,8 @@ button.nav-item-toggle {
 .nav-panel-explore {
   background: #161616;
   background: var(--color-gray-100);
+  border-top: 1px solid #393939;
+  border-top: 1px solid var(--color-gray-80);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
