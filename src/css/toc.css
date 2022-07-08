@@ -7,7 +7,7 @@
   position: sticky;
   top: var(--toc-top);
   min-width: 15rem;
-  max-width: 15rem;
+  max-width: 21rem;
 }
 
 .toc .toc-menu h3 {
@@ -88,7 +88,7 @@
   color: #828282;
   border-left: 4px solid var(--color-gray-20);
   display: inline-block;
-  padding: 12px 12px;
+  padding: 4px 16px;
   text-decoration: none;
   line-height: 21px;
 }
