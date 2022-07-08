@@ -137,6 +137,10 @@ html.is-clipped--nav {
   margin-top: 8px;
 }
 
+.nav-item.is-current-page.is-active .nav-item:first-child {
+  margin-top: 0;
+}
+
 .nav-item {
   height: unset;
   min-height: 34px;
@@ -384,11 +388,11 @@ button.nav-item-toggle {
 .is-current-page[data-depth="4"] > a {
   margin-left:
     calc(
-      -1 * (var(--toc-indention-first-level) + 5 * var(--toc-indention))
+      -1 * (var(--toc-indention-first-level) + 6 * var(--toc-indention))
     );
   padding-left:
     calc(
-      var(--toc-indention-first-level) + 5 * var(--toc-indention) -
+      var(--toc-indention-first-level) + 6 * var(--toc-indention) -
       var(--toc-border-width)
     );
 }
