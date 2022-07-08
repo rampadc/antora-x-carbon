@@ -182,7 +182,7 @@ button.nav-item-toggle {
   transform: rotate(180deg);
   transition: transform 110ms;
   position: absolute;
-  margin-top: 0rem;
+  margin-top: 0;
   right: 0;
 }
 
