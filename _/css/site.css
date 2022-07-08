@@ -3666,7 +3666,7 @@
   --toc-height: calc(100vh - var(--toc-top) - 2.5rem);
   --toc-width: calc(162/var(--rem-base)*1rem);
   --toc-width--widescreen: calc(216/var(--rem-base)*1rem);
-  --doc-max-width: calc(720/var(--rem-base)*1rem);
+  --doc-max-width: 100%;
   --doc-max-width--desktop: calc(100% - 35rem);
   --toc-border-width: 4px;
   --toc-indention-first-level: 16px;
@@ -4736,7 +4736,7 @@ a + .breadcrumbs {
       -ms-hyphens: auto;
           hyphens: auto;
   margin: 0;
-  max-width: 45rem;
+  max-width: 100%;
   max-width: var(--doc-max-width);
   padding: 16px 32px 32px;
   letter-spacing: 0.16px;
