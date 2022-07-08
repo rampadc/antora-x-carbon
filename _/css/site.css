@@ -4087,7 +4087,7 @@ html.is-clipped--nav {
   transition: transform 110ms;
   transition: transform 110ms, -webkit-transform 110ms;
   float: right;
-  margin-right: 16px;
+  margin-right: 0.5rem;
   border: none;
 }
 
