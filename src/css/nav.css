@@ -164,7 +164,7 @@ html.is-clipped--nav {
   transform: rotate(0deg);
   transition: transform 110ms;
   float: right;
-  margin-right: 16px;
+  margin-right: 0.5rem;
   border: none;
 }
 
