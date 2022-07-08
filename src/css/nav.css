@@ -163,9 +163,11 @@ html.is-clipped--nav {
   color: var(--color-gray-30);
   transform: rotate(0deg);
   transition: transform 110ms;
-  float: right;
   margin-right: 0.5rem;
   border: none;
+  position: absolute;
+  margin-top: 0;
+  right: 0;
 }
 
 button.nav-item-toggle {
@@ -175,6 +177,17 @@ button.nav-item-toggle {
 .nav-item.is-active > .nav-item-toggle {
   transform: rotate(180deg);
   transition: transform 110ms;
+  position: absolute;
+  margin-top: 0rem;
+  right: 0;
+}
+
+.nav-item.is-active.is-current-page > .nav-item-toggle {
+  transform: rotate(180deg);
+  transition: transform 110ms;
+  position: absolute;
+  margin-top: -2rem;
+  right: 0;
 }
 
 .nav-text {
