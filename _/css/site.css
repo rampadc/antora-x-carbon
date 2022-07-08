@@ -4314,13 +4314,41 @@ button.nav-item-toggle {
 .is-current-page[data-depth="3"] > span,
 .is-current-page[data-depth="3"] > a {
   margin-left:
-    -40px;
+    -48px;
   margin-left:
-    calc(var(--toc-indention-first-level)*-1 + var(--toc-indention)*3*-1);
+    calc(var(--toc-indention-first-level)*-1 + var(--toc-indention)*4*-1);
   padding-left:
-    36px;
+    44px;
   padding-left:
-    calc(var(--toc-indention-first-level) + var(--toc-indention)*3 - var(--toc-border-width));
+    calc(var(--toc-indention-first-level) + var(--toc-indention)*4 - var(--toc-border-width));
+}
+
+.is-current-page[data-depth="3"] > .nav-item-toggle ~ .nav-link {
+  display: inline-block;
+  width:
+    calc(100% + 72px);
+  width:
+    calc(100% + var(--toc-indention-first-level)*3 + var(--toc-indention)*3);
+}
+
+.is-current-page[data-depth="4"] > span,
+.is-current-page[data-depth="4"] > a {
+  margin-left:
+    -56px;
+  margin-left:
+    calc(var(--toc-indention-first-level)*-1 + var(--toc-indention)*5*-1);
+  padding-left:
+    52px;
+  padding-left:
+    calc(var(--toc-indention-first-level) + var(--toc-indention)*5 - var(--toc-border-width));
+}
+
+.is-current-page[data-depth="4"] > .nav-item-toggle ~ .nav-link {
+  display: inline-block;
+  width:
+    calc(100% + 96px);
+  width:
+    calc(100% + var(--toc-indention-first-level)*4 + var(--toc-indention)*4);
 }
 
 /* End of openlibery docs inspiration */
