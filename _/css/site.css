@@ -4053,6 +4053,10 @@ html.is-clipped--nav {
   margin-top: 8px;
 }
 
+.nav-item.is-current-page.is-active .nav-item:first-child {
+  margin-top: 0;
+}
+
 .nav-item {
   height: unset;
   min-height: 34px;
@@ -4351,13 +4355,13 @@ button.nav-item-toggle {
 .is-current-page[data-depth="4"] > span,
 .is-current-page[data-depth="4"] > a {
   margin-left:
-    -56px;
+    -64px;
   margin-left:
-    calc(var(--toc-indention-first-level)*-1 + var(--toc-indention)*5*-1);
+    calc(var(--toc-indention-first-level)*-1 + var(--toc-indention)*6*-1);
   padding-left:
-    52px;
+    60px;
   padding-left:
-    calc(var(--toc-indention-first-level) + var(--toc-indention)*5 - var(--toc-border-width));
+    calc(var(--toc-indention-first-level) + var(--toc-indention)*6 - var(--toc-border-width));
 }
 
 .is-current-page[data-depth="4"] > .nav-item-toggle ~ .nav-link {
