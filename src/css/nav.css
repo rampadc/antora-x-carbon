@@ -57,6 +57,14 @@ a.nav-link.nav-section-semibold {
   letter-spacing: 0.1px;
 }
 
+.nav-link.has-caret {
+  padding-right: 2rem;
+}
+
+.nav-link:not(.has-caret) {
+  padding-right: 1rem;
+}
+
 .nav .panels {
   display: flex;
   flex-direction: column;
