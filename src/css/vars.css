@@ -379,7 +379,7 @@
   --toc-width: calc(162 / var(--rem-base) * 1rem);
   --toc-width--widescreen: calc(216 / var(--rem-base) * 1rem);
   --doc-max-width: calc(720 / var(--rem-base) * 1rem);
-  --doc-max-width--desktop: calc(828 / var(--rem-base) * 1rem);
+  --doc-max-width--desktop: calc(100% - 16.5rem - 18.5rem);
   --toc-border-width: 4px;
   --toc-indention-first-level: 16px;
   --toc-indention: 8px;
