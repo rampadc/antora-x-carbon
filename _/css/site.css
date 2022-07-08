@@ -4365,6 +4365,10 @@ button.nav-item-toggle {
   margin-top: -8px;
 }
 
+.nav-item[data-depth="1"] > .nav-link {
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1023.5px) {
   aside.toc.sidebar {
     display: none;
