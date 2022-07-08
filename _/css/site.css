@@ -4086,8 +4086,8 @@ html.is-clipped--nav {
 
 .nav-item-toggle {
   background: url(../img/nav-arrow.svg) no-repeat;
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
   fill: #c6c6c6;
   fill: var(--color-gray-30);
   color: #c6c6c6;
