@@ -350,14 +350,44 @@ button.nav-item-toggle {
 .is-current-page[data-depth="3"] > a {
   margin-left:
     calc(
-      -1 * (var(--toc-indention-first-level) + 3 * var(--toc-indention))
+      -1 * (var(--toc-indention-first-level) + 4 * var(--toc-indention))
     );
   padding-left:
     calc(
-      var(--toc-indention-first-level) + 3 * var(--toc-indention) -
+      var(--toc-indention-first-level) + 4 * var(--toc-indention) -
       var(--toc-border-width)
     );
 }
+
+.is-current-page[data-depth="3"] > .nav-item-toggle ~ .nav-link {
+  display: inline-block;
+  width:
+    calc(
+      100% + 3 * (var(--toc-indention-first-level) + var(--toc-indention))
+    );
+}
+
+.is-current-page[data-depth="4"] > span,
+.is-current-page[data-depth="4"] > a {
+  margin-left:
+    calc(
+      -1 * (var(--toc-indention-first-level) + 5 * var(--toc-indention))
+    );
+  padding-left:
+    calc(
+      var(--toc-indention-first-level) + 5 * var(--toc-indention) -
+      var(--toc-border-width)
+    );
+}
+
+.is-current-page[data-depth="4"] > .nav-item-toggle ~ .nav-link {
+  display: inline-block;
+  width:
+    calc(
+      100% + 4 * (var(--toc-indention-first-level) + var(--toc-indention))
+    );
+}
+
 /* End of openlibery docs inspiration */
 
 .nav-item.is-current-page {

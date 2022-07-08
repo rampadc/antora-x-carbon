@@ -83,6 +83,12 @@ const bundleTask = createTask({
   call: series(bundleBuildTask, bundlePackTask),
 })
 
+const devBundleTask = createTask({
+  name: 'bundle:dev',
+  desc: 'Bundle the UI for publishing',
+  call: series(buildTask, bundlePackTask),
+})
+
 const packTask = createTask({
   name: 'pack',
   desc: '(deprecated; use bundle instead)',
@@ -121,5 +127,6 @@ module.exports = exportTasks(
   bundlePackTask,
   previewTask,
   previewBuildTask,
-  packTask
+  packTask,
+  devBundleTask
 )
