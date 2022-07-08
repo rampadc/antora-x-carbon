@@ -6,6 +6,8 @@
   margin-right: 0.75rem;
   position: sticky;
   top: var(--toc-top);
+  min-width: 15rem;
+  max-width: 15rem;
 }
 
 .toc .toc-menu h3 {
