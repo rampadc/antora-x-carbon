@@ -3579,7 +3579,7 @@
   --nav-heading-font-color: var(--color-gray-70);
   --nav-muted-color: var(--color-gray-30);
   --nav-secondary-background: var(--color-white);
-  --nav-min-width: 18.5em;
+  --nav-min-width: 256px;
   /* toolbar */
   --toolbar-background: var(--panel-background);
   --toolbar-border-color: var(--panel-border-color);
@@ -3667,7 +3667,7 @@
   --toc-width: calc(162/var(--rem-base)*1rem);
   --toc-width--widescreen: calc(216/var(--rem-base)*1rem);
   --doc-max-width: calc(720/var(--rem-base)*1rem);
-  --doc-max-width--desktop: calc(828/var(--rem-base)*1rem);
+  --doc-max-width--desktop: calc(100% - 35rem);
   --toc-border-width: 4px;
   --toc-indention-first-level: 16px;
   --toc-indention: 8px;
@@ -3893,7 +3893,7 @@ object[type="image/svg+xml"]:not([width]) {
   top: 48px;
   top: var(--navbar-height);
   left: 0;
-  min-width: 18.5em;
+  min-width: 256px;
   min-width: var(--nav-min-width);
   font-size: 14px;
   z-index: 1;
@@ -3903,7 +3903,7 @@ object[type="image/svg+xml"]:not([width]) {
 
 @media screen and (min-width: 769px) {
   .nav-container {
-    width: 18.5em;
+    width: 256px;
     width: var(--nav-min-width);
   }
 }
@@ -4601,6 +4601,8 @@ a + .breadcrumbs {
   position: sticky;
   top: calc(48px + 3.5rem);
   top: var(--toc-top);
+  min-width: 15rem;
+  max-width: 15rem;
 }
 
 .toc .toc-menu h3 {
@@ -4770,7 +4772,7 @@ a + .breadcrumbs {
         -ms-flex: auto;
             flex: auto;
     font-size: 14px;
-    max-width: 51.75rem;
+    max-width: calc(100% - 35rem);
     max-width: var(--doc-max-width--desktop);
     min-width: 0;
   }
