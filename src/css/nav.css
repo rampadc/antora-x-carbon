@@ -401,3 +401,7 @@ button.nav-item-toggle {
 .nav-list > .nav-item[data-depth="1"]:first-child {
   margin-top: -8px;
 }
+
+.nav-item[data-depth="1"] > .nav-link {
+  font-weight: 600;
+}
