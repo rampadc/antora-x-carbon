@@ -140,17 +140,13 @@ html.is-clipped--nav {
   margin-top: 0;
 }
 
-.nav-list:not(.is-active) > .nav-item:first-child {
+.nav-list > .nav-item:first-child {
   display: block;
   margin-top: 8px;
 }
 
-.nav-item.is-active .nav-item:first-child {
+.nav-item.is-current-page.is-active .nav-item:first-child {
   margin-top: 0;
-}
-
-.nav-item.is-active .nav-item.is-active.is-current-page:first-child {
-  margin-top: 8px;
 }
 
 .nav-item {
