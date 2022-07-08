@@ -202,6 +202,12 @@ button.nav-item-toggle {
   right: 0;
 }
 
+.nav-item.is-current-page > .nav-item-toggle {
+  position: absolute;
+  margin-top: -2rem;
+  right: 0;
+}
+
 .nav-text {
   font-weight: var(--body-font-weight-bold);
   color: var(--color-gray-30);
