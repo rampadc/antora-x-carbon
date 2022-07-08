@@ -119,8 +119,8 @@ html.is-clipped--nav {
 
 .nav-menu hr {
   margin: 0 1rem 0.5rem 1rem;
-  height: 1px;
-  background-color: var(--color-gray-70);
+  border-style: solid;
+  border-color: var(--color-gray-80);
   width: calc(100% - 2rem);
 }
 
@@ -217,6 +217,7 @@ button.nav-item-toggle {
 
 .nav-panel-explore {
   background: var(--color-gray-100);
+  border-top: 1px solid var(--color-gray-80);
   display: flex;
   flex-direction: column;
   position: absolute;
