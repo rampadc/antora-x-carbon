@@ -5586,11 +5586,6 @@ p.tableblock {
   margin-top: 0.5rem;
 }
 
-.doc .olist li + li,
-.doc .ulist li + li {
-  margin-top: 0.5rem;
-}
-
 .doc .ulist .listingblock,
 .doc .olist .listingblock,
 .doc .admonitionblock .listingblock {
@@ -6116,6 +6111,14 @@ sans-serif;
   font-size: 14px;
   color: #2d3f49;
   line-height: 1.65;
+}
+
+.doc li p:not(.tableblock) {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #2d3f49;
+  line-height: 1.45;
 }
 
 nav.pagination {
