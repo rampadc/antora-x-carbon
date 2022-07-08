@@ -4086,9 +4086,11 @@ html.is-clipped--nav {
   transition: -webkit-transform 110ms;
   transition: transform 110ms;
   transition: transform 110ms, -webkit-transform 110ms;
-  float: right;
   margin-right: 0.5rem;
   border: none;
+  position: absolute;
+  margin-top: 0;
+  right: 0;
 }
 
 button.nav-item-toggle {
@@ -4102,6 +4104,21 @@ button.nav-item-toggle {
   transition: -webkit-transform 110ms;
   transition: transform 110ms;
   transition: transform 110ms, -webkit-transform 110ms;
+  position: absolute;
+  margin-top: 0rem;
+  right: 0;
+}
+
+.nav-item.is-active.is-current-page > .nav-item-toggle {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 110ms;
+  transition: -webkit-transform 110ms;
+  transition: transform 110ms;
+  transition: transform 110ms, -webkit-transform 110ms;
+  position: absolute;
+  margin-top: -2rem;
+  right: 0;
 }
 
 .nav-text {
