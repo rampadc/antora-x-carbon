@@ -4071,6 +4071,7 @@ html.is-clipped--nav {
   vertical-align: baseline;
   padding-top: 8px;
   padding-bottom: 8px;
+  position: relative;
 }
 
 /* matches list without a title */
@@ -4098,14 +4099,11 @@ html.is-clipped--nav {
   transition: -webkit-transform 110ms;
   transition: transform 110ms;
   transition: transform 110ms, -webkit-transform 110ms;
-  margin-right: 0.5rem;
+  margin-right: 16px;
   border: none;
   position: absolute;
   margin-top: 0;
   right: 0;
-}
-
-button.nav-item-toggle {
   padding-top: 0;
 }
 
