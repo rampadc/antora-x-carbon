@@ -443,3 +443,7 @@ html.is-clipped--nav {
 .nav-item[data-depth="1"] > .nav-link {
   font-weight: 600;
 }
+
+.nav-item.is-current-page.is-active .nav-list .nav-item:last-child {
+  margin-bottom: 0;
+}
