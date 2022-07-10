@@ -3960,6 +3960,15 @@ a.nav-link.nav-section-semibold {
   letter-spacing: 0.1px;
 }
 
+.nav-link:hover {
+  color: #f4f4f4;
+  color: var(--color-gray-10);
+}
+
+a.nav-link:hover {
+  text-decoration: none;
+}
+
 .nav-link.has-caret {
   padding-right: 2rem;
 }
@@ -6286,7 +6295,7 @@ body {
 }
 
 .navbar-brand > a.navbar-item {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px !important;
   margin-left: 16px;
 }
