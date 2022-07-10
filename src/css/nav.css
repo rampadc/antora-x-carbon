@@ -57,6 +57,14 @@ a.nav-link.nav-section-semibold {
   letter-spacing: 0.1px;
 }
 
+.nav-link:hover {
+  color: var(--color-gray-10);
+}
+
+a.nav-link:hover {
+  text-decoration: none;
+}
+
 .nav-link.has-caret {
   padding-right: 2rem;
 }
